@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlankApp3.Views.MainPage"
+             Title="{Binding Title}">
+
+
+    <StackLayout HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand">
+
+        <Label Text="Main Page"
+               FontSize="30" />
+
+        <Button Text="Go To Second Page"
+                Command="{Binding OpenSecondPageCommand}" />
+
+
+        <Button Text="Go BACK"
+                Command="{Binding GoBackCommand}" />
+
+    </StackLayout>
+
+</ContentPage>
